@@ -14,7 +14,7 @@ function Letter(str) {
         if (guess === this.character) {
             this.guessed = true;
             this.characterShown = str
-            console.log("Your guess of: " + guess + " was correct!")
+            return "correct"
         } else {
             console.log("That was an incorrect guess!")
         }

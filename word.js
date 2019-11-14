@@ -19,7 +19,7 @@ var Word = function (word) {
         this.reviewGuess = function(guess) {
             
             for ( i = 0; i < this.lettersArray.length; i++ ) {
-                this.lettersArray[i].checkGuess(guess)
+                console.log(this.lettersArray[i].checkGuess(guess))
             }
             console.log(this.lettersArray)
         }

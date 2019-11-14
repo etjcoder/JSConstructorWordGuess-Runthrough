@@ -11,9 +11,9 @@ var Word = function (word) {
         },
         this.checkLength = function(word) {
             if (this.lettersArray.length === word.length) {
-                console.log(this)
+                // console.log(this)
             } else {
-                console.log("Still adding letters to: " + word)
+                // console.log("Still adding letters to: " + word)
             }
         }, 
         this.reviewGuess = function(guess) {
@@ -21,12 +21,11 @@ var Word = function (word) {
             for ( i = 0; i < this.lettersArray.length; i++ ) {
                 this.lettersArray[i].checkGuess(guess)
             }
-
             console.log(this.lettersArray)
         }
 }
 
-var apples = new Word("apples")
+// var apples = new Word("apples")
 
 var populateLetters = function (object) {
     for (i = 0; i < object.wordString.length; i++) {
@@ -34,6 +33,8 @@ var populateLetters = function (object) {
     }
 }
 
-populateLetters(apples)
+// populateLetters(apples)
 
-apples.reviewGuess("e")
+// apples.reviewGuess("e")
+
+module.exports = Word
